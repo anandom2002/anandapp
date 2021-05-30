@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>anand</title>
+  </head>
+  <body>
+       {{>navbar}}
+       <div class="container-fluid abt-main">
+         <div class="row">
+           <div class="col-md-10 col-12 mx-auto ">
+             <div class="row">
+               <div class="col-md-6 col-12 mx-auto abt-left">
+                 <img src="images/anand1.jfif" width="200px" height="240px" alt="">
+                 <h1>MEET &nbsp;&nbsp;&nbsp;<span id="name">ANAND</span></h1>
+                 <p><b>Anand Jaiswal</b> lives in Saharsa with his family.He began his Mern Development carrer in Mar 2018.He is currently working as SDE-II in <b>Atlassian</b>,Sant Clara, California.He created a weather-forecast website.<br><br> <a  id="weather" href="http://nikky-weather-info.herokuapp.com/">Know your city Weather</a><br><br></p>
+
+               </div>
+               <div class="col-md-6 col-12 mx-auto abt-right">
+                  <div class="icons">
+                      <a href="https://www.instagram.com/anand_om_/?r=nametag"><i class="fab fa-instagram " style="color:rgb(218, 32, 63)"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100013362693629"><i class="fab fa-facebook" style="color:rgb(33, 19, 156)"></i></a>
+                      <a href="https://twitter.com/NikhilJ01221203"><i class="fab fa-twitter-square" style="color:rgb(32, 175, 218)"></i></a>
+                      <a href="https://wa.me/qr/TCWSIQRQ2TQEN1"><i class="fab fa-whatsapp" style="color:rgb(24, 185, 65)"></i></a>
+                  </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+      {{>footer}}
+      {{>links}}
+      <script>
+            function randomRGB() {
+              var x = Math.floor((Math.random() * 254) + 1);
+              return x;
+              }
+
+        setInterval(function(){
+          document.querySelector('.abt-main .abt-left h1 #name').style.color = 'rgb(' + randomRGB() + ',' + randomRGB() + ',' + randomRGB() + ')';
+                }, 500);
+      </script>
+
+
+  </body>
+</html>

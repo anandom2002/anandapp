@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>anand</title>
+  </head>
+  <body>
+       {{>navbar}}
+         <div class="form-div">
+             <h2>Log in here</h2>
+             <form action="#" class="myForm">
+                  <div class="form-group">
+                    <input onfocus='this.placeholder=""' onblur='this.placeholder="Enter Username"' id="uname" type="text" class="form-control" name="username" placeholder="Enter Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input onfocus='this.placeholder=""' onblur='this.placeholder="Enter Password"' id="password" type="password" class="form-control" name="password" placeholder="Enter Password" value="">
+                  </div>
+                  <input id="submit-btn" type="submit" value="submit">
+             </form>
+         </div>
+      {{>footer}}
+      {{>links}}
+
+
+  </body>
+</html>
