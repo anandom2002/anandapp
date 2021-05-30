@@ -4,7 +4,7 @@
   "description": "anand official",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js -e css,hbs,js",
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "anand",
